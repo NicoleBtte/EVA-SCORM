@@ -57,7 +57,7 @@ export const TextoRespuesta = styled.div`
     ${(props) =>
     props.respuesta === "true" &&
     css`
-      color: #017717;
+      color: #017713;
     `}
     ${(props) =>
     props.respuesta === "false" &&
