@@ -1,12 +1,55 @@
 import React, { useState } from 'react'
 import { useHistory } from "react-router";
 import { ContenedorAudio, BotonEnviar, Contenedor, ContenedorPrincipal, ContenedorTexto, InputTexto, Texto, Titulo, TituloLeccion, TituloLeccion1, ImagenSonido, TextoRespuesta } from './EstiloActividad';
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Inicio() {
     const [enviar, setEnviar] = useState(false)
     const respuestas = ["palabras", "audio", "actividad"]
     const enviarDatos = () => {
-        setEnviar(true)
+        if (respuesta1 !== ""){
+            if (respuesta2 !== ""){
+                if (respuesta3 !== ""){
+                    setEnviar(true)
+                }else{
+                    toast("Ingrese respuesta 3", {
+                        icon: "⚠️",
+                        duration: 3000,
+                        style: {
+                          border: "2px solid #144235",
+                          padding: "10px",
+                          color: "#fff",
+                          background: "#5c5957",
+                          borderRadius: "4%",
+                        },
+                      });
+                }
+            }else{
+                toast("Ingrese respuesta 2", {
+                    icon: "⚠️",
+                    duration: 3000,
+                    style: {
+                      border: "2px solid #144235",
+                      padding: "10px",
+                      color: "#fff",
+                      background: "#5c5957",
+                      borderRadius: "4%",
+                    },
+                  });
+            }
+        }else{
+            toast("Ingrese respuesta 1", {
+                icon: "⚠️",
+                duration: 3000,
+                style: {
+                  border: "2px solid #144235",
+                  padding: "10px",
+                  color: "#fff",
+                  background: "#5c5957",
+                  borderRadius: "4%",
+                },
+              });
+        }
     }
     const [respuesta1, setRespuesta1] = useState("")
     const [respuesta2, setRespuesta2] = useState("")
@@ -77,6 +120,7 @@ export default function Inicio() {
 
                     </>
                 }
+                <Toaster reverseOrder={true} position="top-right" />
             </Contenedor>
         </ContenedorPrincipal>
     );
