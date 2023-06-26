@@ -1,4 +1,4 @@
-import { SCORM } from 'pipwerks-scorm-api-wrapper';
+//import { SCORM } from 'pipwerks-scorm-api-wrapper';
 
 /*const scorm = new SCORM();
 
@@ -36,9 +36,9 @@ export const finishScorm = () => {
   }
 };*/
 
-export const getStudentName = () => {
+/*export const getStudentName = () => {
     SCORM.init();
     var name = SCORM.get('cmi.core.student_name');
     return name;
     //return scorm.get('cmi.core.student_name');
-};
+};*/

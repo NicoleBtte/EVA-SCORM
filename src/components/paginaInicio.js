@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { getStudentName } from '../scormWrapper';
 import { useNavigate } from 'react-router-dom';
 
 function PaginaInicio() {
@@ -12,7 +11,8 @@ function PaginaInicio() {
   };
 
   useEffect(() => {
-    const name = getStudentName();
+    //const name = getStudentName();
+    const name = "Nicky";
     setStudentName(name);
   }, []);
 
