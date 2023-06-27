@@ -5,7 +5,7 @@
     <metadataSchema>ADL SCORM 1.2</metadataSchema>
     <identifier>
       <catalog>URI</catalog>
-      <entry>FL.MyAmazingCompany.TestCourse.410fd4ac-c370-4213-a1c4-c4dd5e56f7e0</entry>
+      <entry>FL.MyAmazingCompany.TestCourse.5002b339-80e3-446b-9008-a36d43d6f9c4</entry>
     </identifier>
     <language>en-US</language>
     <contribute>
@@ -23,15 +23,15 @@ EMAIL;PREF;INTERNET:my@email.com
 URL:https://mydomain.com
 END:VCARD  ]]></entity>
       <date>
-        <dateTime>2023-06-25</dateTime>
-        <description language="en-US"><![CDATA[1687749428391]]></description>
+        <dateTime>2023-06-26</dateTime>
+        <description language="en-US"><![CDATA[1687803720226]]></description>
       </date>
     </contribute>
   </metametadata>
   <general>
     <identifier>
       <catalog>URI</catalog>
-      <entry>FL.MyAmazingCompany.TestCourse.410fd4ac-c370-4213-a1c4-c4dd5e56f7e0</entry>
+      <entry>FL.MyAmazingCompany.TestCourse.5002b339-80e3-446b-9008-a36d43d6f9c4</entry>
     </identifier>
     <title>
       <string language="en-US"><![CDATA[Test Course]]></string>
@@ -77,8 +77,8 @@ EMAIL;PREF;INTERNET:my@email.com
 URL:https://mydomain.com
 END:VCARD  ]]></entity>
       <date>
-        <dateTime>2023-06-25</dateTime>
-        <description language="en-US"><![CDATA[1687749428391]]></description>
+        <dateTime>2023-06-26</dateTime>
+        <description language="en-US"><![CDATA[1687803720226]]></description>
       </date>
     </contribute>
     <contribute>
@@ -96,8 +96,8 @@ EMAIL;PREF;INTERNET:my@email.com
 URL:https://mydomain.com
 END:VCARD  ]]></entity>
       <date>
-        <dateTime>2023-06-25</dateTime>
-        <description language="en-US"><![CDATA[1687749428391]]></description>
+        <dateTime>2023-06-26</dateTime>
+        <description language="en-US"><![CDATA[1687803720226]]></description>
       </date>
     </contribute>
     <contribute>
@@ -116,8 +116,8 @@ EMAIL;PREF;INTERNET:my@email.com
 URL:https://mydomain.com
 END:VCARD  ]]></entity>
       <date>
-        <dateTime>2023-06-25</dateTime>
-        <description language="en-US"><![CDATA[1687749428391]]></description>
+        <dateTime>2023-06-26</dateTime>
+        <description language="en-US"><![CDATA[1687803720226]]></description>
       </date>
     </contribute>
     <contribute>
@@ -135,8 +135,8 @@ EMAIL;PREF;INTERNET:my@email.com
 URL:https://mydomain.com
 END:VCARD  ]]></entity>
       <date>
-        <dateTime>2023-06-25</dateTime>
-        <description language="en-US"><![CDATA[1687749428391]]></description>
+        <dateTime>2023-06-26</dateTime>
+        <description language="en-US"><![CDATA[1687803720226]]></description>
       </date>
     </contribute>
   </lifeCycle>
