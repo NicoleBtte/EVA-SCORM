@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest identifier="FL.MyAmazingCompany.TestCourse.34950cbf-ae01-4ea0-a9d9-35329e28a73a" version="1" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <adlcp:location>metadata.xml</adlcp:location>
+  </metadata>
+  <organizations default="My_Amazing_Company">
+    <organization identifier="My_Amazing_Company">
+      <title>Test Course</title>
+      <item identifier="item_FL.MyAmazingCompany.TestCourse.34950cbf-ae01-4ea0-a9d9-35329e28a73a" identifierref="resource_FL.MyAmazingCompany.TestCourse.34950cbf-ae01-4ea0-a9d9-35329e28a73a">
+        <title>Test Course</title>
+        <adlcp:masteryscore>80</adlcp:masteryscore>
+        <metadata>
+          <schema>ADL SCORM</schema>
+          <schemaversion>1.2</schemaversion>
+          <adlcp:location>metadata.xml</adlcp:location>
+        </metadata>
+      </item>
+      <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>1.2</schemaversion>
+        <adlcp:location>metadata.xml</adlcp:location>
+      </metadata>
+    </organization>
+  </organizations>
+  <resources>
+    <metadata>
+      <schema>ADL SCORM</schema>
+      <schemaversion>1.2</schemaversion>
+      <adlcp:location>metadata.xml</adlcp:location>
+    </metadata>
+    <resource identifier="resource_FL.MyAmazingCompany.TestCourse.34950cbf-ae01-4ea0-a9d9-35329e28a73a" type="webcontent" href="index.html" adlcp:scormtype="sco">
+      <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>1.2</schemaversion>
+        <adlcp:location>metadata.xml</adlcp:location>
+      </metadata>
+      <file href="asset-manifest.json"/>
+      <file href="audios/audio1.mp3"/>
+      <file href="favicon.ico"/>
+      <file href="index.html"/>
+      <file href="logo192.png"/>
+      <file href="logo512.png"/>
+      <file href="manifest.json"/>
+      <file href="robots.txt"/>
+      <file href="static/css/main.073c9b0a.css"/>
+      <file href="static/css/main.073c9b0a.css.map"/>
+      <file href="static/js/787.319676fc.chunk.js"/>
+      <file href="static/js/787.319676fc.chunk.js.map"/>
+      <file href="static/js/main.9edbf04f.js"/>
+      <file href="static/js/main.9edbf04f.js.LICENSE.txt"/>
+      <file href="static/js/main.9edbf04f.js.map"/>
+      <file href="static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg"/>
+    </resource>
+  </resources>
+</manifest>

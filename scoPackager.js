@@ -18,14 +18,6 @@ const config = {
     keywords: ['scorm', 'test', 'course'],
     typicalDuration: 'PT0H5M0S',
     rights: `©${new Date().getFullYear()} My Amazing Company. All right reserved.`,
-    vcard: {
-      author: 'Firstname Lastname',
-      org: 'My Amazing Company',
-      tel: '(000) 000-0000',
-      address: 'my address',
-      mail: 'my@email.com',
-      url: 'https://mydomain.com'
-    }
   }
 };
 

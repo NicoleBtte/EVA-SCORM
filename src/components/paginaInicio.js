@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import Seccion from './seccion';
 
 function PaginaInicio() {
   const [studentName, setStudentName] = useState('');
-
-  const navigate = useNavigate();
+  const [showPagina1, setShowPagina1] = useState(false);
 
   const handleEmpezarClick = () => {
-    navigate('/pagina1');
+    setShowPagina1(true);
   };
 
   useEffect(() => {
@@ -18,10 +17,19 @@ function PaginaInicio() {
 
   return (
     <div>
-      <h1>Página inicio</h1>
-      <h3>Bienvenido!</h3>
-      <p>Nombre del estudiante: {studentName}</p>
-      <button onClick={handleEmpezarClick}>Empezar</button>
+      {!showPagina1 && (
+        <>
+          <Seccion></Seccion>
+        </>
+      )}
+
+      {showPagina1 && (
+        <>
+          {/* Aquí va el contenido de la página 1 */}
+          <h1>Página 1</h1>
+          <p>Contenido de la Página 1</p>
+        </>
+      )}
     </div>
   );
 }

@@ -1,18 +1,39 @@
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PaginaInicio from './components/paginaInicio';
 import Seccion from './components/seccion';
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('inicio');
+
+  const renderContent = () => {
+    if (currentPage === 'inicio') {
+      return <PaginaInicio />;
+    } else if (currentPage === 'pagina1') {
+      return <Seccion />;
+    }
+  };
+
+  const handleNavigation = (page) => {
+    setCurrentPage(page);
+  };
+
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<PaginaInicio />} />
-          <Route path="/pagina1" element={<Seccion />} />
-        </Routes>
-      </Router>
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <button onClick={() => handleNavigation('inicio')}>Inicio</button>
+            </li>
+            <li>
+              <button onClick={() => handleNavigation('pagina1')}>Página 1</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>{renderContent()}</main>
     </>
   );
 }
