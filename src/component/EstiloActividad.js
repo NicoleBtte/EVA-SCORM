@@ -115,3 +115,19 @@ export const ContenedorAudio = styled.div`
 export const ImagenSonido = styled.img`
     margin-bottom: 0%;
 `
+export const BotonTerminar = styled.button`
+  margin-left: 85%;
+  margin-top:5px;
+  font-size: 17px;
+  background: grey;
+  color: black;
+  height: 45px;
+  width: 200px;
+  font-weight: 1000;
+  border-radius: 20px;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #ffffff;
+    color: black;
+  }
+`;

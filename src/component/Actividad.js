@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { useHistory } from "react-router";
-import { ContenedorAudio, BotonEnviar, Contenedor, ContenedorPrincipal, ContenedorTexto, InputTexto, Texto, Titulo, TituloLeccion, TituloLeccion1, ImagenSonido, TextoRespuesta } from './EstiloActividad';
+import { ContenedorAudio, BotonEnviar, Contenedor, ContenedorPrincipal, ContenedorTexto, InputTexto, Texto, Titulo, TituloLeccion, TituloLeccion1, ImagenSonido, TextoRespuesta, BotonTerminar } from './EstiloActividad';
 import toast, { Toaster } from "react-hot-toast";
+import { saveStudentScore, finishScorm } from '../scormWrapper';
 
 export default function Actividad() {
     const [enviar, setEnviar] = useState(false)
@@ -66,7 +67,13 @@ export default function Actividad() {
         if (respuestas[2] === respuesta3){
             suma ++
         }
-        return parseInt( (100/3) * suma)
+        let notafinal = parseInt( (100/3) * suma);
+
+        saveStudentScore(notafinal);
+        return notafinal;
+    }
+    const cerrarActividad = () =>{
+        finishScorm();
     }
     return (
         <ContenedorPrincipal>
@@ -117,7 +124,7 @@ export default function Actividad() {
                         <ContenedorTexto>
                             <TituloLeccion1 nota = {nota()}>{nota()}/100</TituloLeccion1>
                         </ContenedorTexto>
-
+                        <BotonTerminar onClick={cerrarActividad}>Terminar actividad</BotonTerminar>
                     </>
                 }
                 <Toaster reverseOrder={true} position="top-right" />
