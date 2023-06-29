@@ -3,7 +3,7 @@ import { useHistory } from "react-router";
 import { ContenedorAudio, BotonEnviar, Contenedor, ContenedorPrincipal, ContenedorTexto, InputTexto, Texto, Titulo, TituloLeccion, TituloLeccion1, ImagenSonido, TextoRespuesta } from './EstiloActividad';
 import toast, { Toaster } from "react-hot-toast";
 
-export default function Inicio() {
+export default function Actividad() {
     const [enviar, setEnviar] = useState(false)
     const respuestas = ["palabras", "audio", "actividad"]
     const enviarDatos = () => {

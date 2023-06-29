@@ -7,12 +7,7 @@ import {
 
 function App() {
   return (
-    <Router>
-      <Switch>
-          <Route path='/' exact component={Inicio}/>
-          <Route path='/actividad' component={Actividad}/>
-      </Switch>
-      </Router>
+    <Inicio></Inicio>
   );
 }
 
