@@ -92,7 +92,7 @@ export default function Actividad() {
                             <ImagenSonido src={require("../Imagenes/images.png")}></ImagenSonido>
                         </ContenedorAudio>
                         <ContenedorAudio>
-                            <audio type="audio/mp3" controls></audio>
+                            <audio src='audios/audio1.mp3' type="audio/mp3" controls></audio>
                         </ContenedorAudio>
                         <ContenedorTexto>
                             <Texto>Completa las </Texto>
